@@ -49,6 +49,7 @@ Project conventions for this workspace. Read before editing site content.
 - Agreed solution: both `ybs.html` and the separate page `yangon-bus-app.html` use **visible, natural English phrases** that contain the intent strings the owner wants — `easy YBS`, `YGNGO` (as "YGN go — Yangon, go anywhere"), `YBS Go` (as "YBS Go — from bus number to bus stop"), and "you can go anywhere in Yangon (YGN) easily with DD BitePu YBS app". These are taglines in visible copy, not hidden text and not claims to be another app. `ybs.html` remains positive-only about DD BitePu. Keep FAQ answers and JSON-LD keywords in sync with the visible copy on both pages.
 - Required structured data on `ybs.html`: `WebPage`, `WebSite`, `BreadcrumbList`, `Person`, `MobileApplication`, `FAQPage`.
 - FAQ answers in HTML must match `FAQPage` JSON-LD exactly.
+- `llms.txt` is published at the site root and linked from all four pages with a relative `rel="describedby"`. It is a proposed convention for agents, **not** a Google Search ranking factor. Keep its facts (identity, 13 apps, education before the 2021 coup, political neutrality, stack, verified profiles, duck.com-only email, Telegram) in sync with visible copy and `Person` schema. Never put hidden competitor names, unverifiable claims or private crypto details in it.
 
 ## Workflow
 

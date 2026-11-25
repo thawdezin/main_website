@@ -33,6 +33,7 @@ The root asset directory is intentional. `.assetsignore` ensures development fil
 - `styles.css` — responsive visual system and motion
 - `script.js` — mobile navigation, progressive reveal behavior, and carousel controls
 - `robots.txt` / `sitemap.xml` — search engine discovery
+- `llms.txt` — curated, markdown-formatted entry point for AI agents; linked from every page with `rel="describedby"`
 
 ## Design
 
@@ -40,4 +41,4 @@ The visual system follows `thaw_de_zin_portfolio_theme_ui_ux_upgrade_spec.md`: w
 
 ## SEO / AI visibility notes
 
-Search intent is targeted with visible, sourced content and machine-readable schema — not hidden keyword text, which Google treats as spam. Update `ybs.html` when store ratings, versions, or route data change, and keep the visible FAQ answers identical to the `FAQPage` JSON-LD on both guide pages. `burmese-chess.html` mirrors the download layout from `thawdezin.vercel.app/chess` using verified store and GitHub installer links.
+Search intent is targeted with visible, sourced content and machine-readable schema — not hidden keyword text, which Google treats as spam. Update `ybs.html` when store ratings, versions, or route data change, and keep the visible FAQ answers identical to the `FAQPage` JSON-LD on both guide pages. `burmese-chess.html` mirrors the download layout from `thawdezin.vercel.app/chess` using verified store and GitHub installer links. `llms.txt` follows the llms.txt v2 format as a small, factual map for agents; it is a discovery aid, not a Google Search ranking factor, so keep every claim consistent with the visible pages and `Person` schema.
