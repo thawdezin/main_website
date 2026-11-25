@@ -34,3 +34,29 @@ document.querySelectorAll('.reveal').forEach((element, index) => {
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('.store-carousel').forEach((carousel) => {
+  const buttons = document.querySelectorAll(`[data-carousel="${carousel.id}"]`);
+  const updateButtons = () => {
+    buttons.forEach((button) => {
+      const atStart = carousel.scrollLeft <= 2;
+      const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 2;
+      button.disabled = button.dataset.direction === 'prev' ? atStart : atEnd;
+    });
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const card = carousel.querySelector('.store-card');
+      const step = card ? card.getBoundingClientRect().width + 18 : carousel.clientWidth * 0.8;
+      carousel.scrollBy({
+        left: button.dataset.direction === 'next' ? step : -step,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  carousel.addEventListener('scroll', updateButtons, { passive: true });
+  window.addEventListener('resize', updateButtons);
+  updateButtons();
+});
