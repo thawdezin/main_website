@@ -95,7 +95,7 @@ button { font: inherit; }
 .hero-intro { font-size: clamp(1rem, 1.4vw, 1.18rem); font-weight: 400; line-height: 1.65; max-width: 58ch; margin: 22px 0; color: var(--text-secondary); }
 .hero-intro strong { color: var(--text-primary); font-weight: 500; }
 .hero-actions { display: flex; align-items: center; gap: 26px; }
-.hero-visual { justify-self: end; width: 100%; max-width: 560px; aspect-ratio: 1; position: relative; display: grid; place-items: center; }
+.hero-visual { justify-self: end; width: 75%; max-width: 420px; aspect-ratio: 1; position: relative; display: grid; place-items: center; }
 .hero-visual::before { content: ''; position: absolute; inset: 8%; border-radius: 50%; background: var(--gradient-ambient); filter: blur(12px); z-index: 1; }
 .portrait-frame { width: 100%; aspect-ratio: 1; border-radius: 28px; overflow: hidden; background: var(--bg-surface-subtle); position: relative; z-index: 2; box-shadow: 0 24px 60px rgba(15,118,110,.22), 0 0 0 1px rgba(255,255,255,.75), 0 0 50px rgba(45,212,191,.16); border: 1px solid rgba(255,255,255,.7); }
 .portrait-frame::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.6); border-radius: inherit; pointer-events: none; }
@@ -119,12 +119,16 @@ button { font: inherit; }
 .hero-proof span { color: var(--text-muted); font-size: .72rem; max-width: 26ch; }
 
 /* Manifesto */
-.manifesto { background: var(--stage-dark-bg); color: var(--stage-dark-text); padding: 120px 0; position: relative; overflow: hidden; }
+.manifesto { background: var(--stage-dark-bg); color: var(--stage-dark-text); padding: 110px 0 120px; position: relative; overflow: hidden; }
 .manifesto::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 82% 18%, rgba(45,212,191,.09), transparent 55%); }
-.manifesto-inner { position: relative; }
-.manifesto-inner p { color: var(--stage-dark-accent); text-transform: uppercase; letter-spacing: .2em; font-size: .66rem; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
-.manifesto h2 { margin: 26px 0 0; font-weight: 500; font-size: clamp(2.8rem, 6.4vw, 6.4rem)/1.02; letter-spacing: -.055em; }
-.manifesto h2 span { color: rgba(244,244,246,.38); }
+.manifesto-inner { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
+.manifesto-lead p { margin: 0; color: var(--stage-dark-accent); text-transform: uppercase; letter-spacing: .2em; font-size: .66rem; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+.manifesto h2 { margin: 24px 0 0; font-weight: 500; font-size: clamp(3rem, 6.4vw, 6.4rem)/1.02; letter-spacing: -.055em; }
+.manifesto-principles { border-top: 1px solid rgba(255,255,255,.12); }
+.manifesto-principle { display: grid; grid-template-columns: 52px 1fr; align-items: baseline; gap: 18px; padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.manifesto-principle span { font: 500 .68rem 'JetBrains Mono', monospace; letter-spacing: .12em; color: var(--stage-dark-accent); }
+.manifesto-principle span::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: currentColor; margin-right: 10px; vertical-align: middle; }
+.manifesto-principle p { margin: 0; font-size: clamp(1rem, 1.4vw, 1.25rem); line-height: 1.4; color: rgba(244,244,246,.58); }
 
 /* Work */
 .work { padding: 120px 0; }
@@ -252,8 +256,7 @@ button { font: inherit; }
 .wallet-card .copy-button:hover { border-color: var(--accent-primary); background: var(--accent-soft); }
 .wallet-card .copy-button.copied { background: var(--accent-primary); color: #fff; border-color: var(--accent-primary); }
 .support-footnote { margin: 30px 0 0; font-size: .8rem; line-height: 1.7; color: var(--text-secondary); }
-.support-verified { margin: 12px 0 0; font-size: .7rem; line-height: 1.7; color: var(--text-muted); }
-.support-footnote [lang='my'], .support-verified [lang='my'] { display: block; margin-top: 5px; }
+.support-footnote [lang='my'] { display: block; margin-top: 5px; }
 
 /* Contact — Obsidian closing stage */
 .contact { background: var(--gradient-contact); color: var(--stage-dark-text); padding: clamp(88px, 10vw, 140px) 0 80px; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,.08); }
@@ -272,7 +275,7 @@ button { font: inherit; }
 .email-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
 .email-address { font-size: clamp(.95rem, 1.6vw, 1.22rem); font-weight: 600; text-decoration: none; letter-spacing: -.02em; overflow-wrap: anywhere; }
 .email-address span { color: var(--stage-dark-accent); margin-left: 6px; }
-.copy-button { flex: none; background: transparent; border: 1px solid var(--stage-dark-border); color: var(--stage-dark-text); border-radius: 8px; padding: 7px 12px; font-size: .7rem; font-weight: 700; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.copy-button { flex: none; display: inline-flex; align-items: center; text-decoration: none; background: transparent; border: 1px solid var(--stage-dark-border); color: var(--stage-dark-text); border-radius: 8px; padding: 7px 12px; font-size: .7rem; font-weight: 700; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
 .copy-button:hover { border-color: var(--stage-dark-accent); color: var(--stage-dark-accent); }
 .copy-button.copied { background: var(--stage-dark-accent); color: var(--stage-dark-bg); border-color: var(--stage-dark-accent); }
 .contact-meta { display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px; align-items: start; margin-top: 64px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.08); }
@@ -377,9 +380,10 @@ button { font: inherit; }
   .nav-links a { font-size: 1.3rem; }
   .hero { grid-template-columns: 1fr; padding-top: 30px; }
   .hero h1 { font-size: clamp(2.6rem, 8vw, 4rem); }
-  .hero-visual { grid-row: 2; justify-self: center; width: min(440px, 88vw); margin: 36px 0; }
+  .hero-visual { grid-row: 2; justify-self: center; width: min(330px, 66vw); margin: 36px 0; }
   .hero-proof { grid-row: 3; }
   .section-heading { grid-template-columns: 1fr; gap: 20px; }
+  .manifesto-inner { grid-template-columns: 1fr; gap: 38px; }
   .project-featured { grid-template-columns: 1fr; }
   .project-art { min-height: 540px; border-left: 0; border-top: 1px solid var(--border-subtle); }
   .project-grid { grid-template-columns: 1fr; }
@@ -421,6 +425,7 @@ button { font: inherit; }
   .hero-proof div + div { border-left: 0; border-top: 1px solid var(--border-subtle); padding: 14px 0 0; }
   .manifesto, .work, .story, .expertise { padding: 85px 0; }
   .manifesto h2 { font-size: 2.9rem; }
+  .manifesto-principle { grid-template-columns: 42px 1fr; gap: 12px; padding: 18px 0; }
   .project-copy { padding: 30px 22px; }
   .project-metrics { flex-wrap: wrap; gap: 16px; }
   .project-art { min-height: 520px; }

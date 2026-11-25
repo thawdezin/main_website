@@ -58,7 +58,7 @@
 
 ### Why This Palette Fits Thaw De Zin
 1. **Warm Alabaster (`#F8F7F4`) + Ink (`#18181B`):** Feels like high-craft software documentation and modern editorial design—clean, timeless, and readable.
-2. **Deep Jade (`#0F766E`) & Luminous Mint-Teal (`#2DD4BF`):** Reflects reliability, offline-first utility, privacy (`proton.me` / `duck.com`), and calm engineering confidence without visual fatigue.
+2. **Deep Jade (`#0F766E`) & Luminous Mint-Teal (`#2DD4BF`):** Reflects reliability, offline-first utility, privacy (`duck.com`), and calm engineering confidence without visual fatigue.
 3. **Obsidian Slate (`#111317`) Closing Stage:** Replaces the jarring orange footer with a grounded, executive, high-contrast closing experience that makes visitors want to reach out.
 
 ### Selective Gradient Rules
@@ -97,12 +97,12 @@ Gradients are used sparingly, only at four focal points:
      > **"Have a meaningful problem worth solving?"**
    - Concise subcopy (`--stage-dark-muted`):
      > *"Whether you're shipping a new mobile product, scaling cross-platform architecture, or need an engineer who cares about real-world reliability—let's talk."*
-3. **Interactive Email Action Cards (2-Column Bento Row):**
-   - **Primary Card (`thawdezin@proton.me`):**
+3. **Interactive Contact Action Cards (2-Column Bento Row):**
+   - **Email Card (`thawdezin@duck.com` only):**
      - Styled in `--stage-dark-surface` (`#191C22`) with `1px solid var(--stage-dark-border)`, `16px` border-radius, smooth hover lift (`translateY(-2px)`), and border glow (`rgba(45, 212, 191, 0.4)`).
-     - Displays label `PRIMARY · ENCRYPTED`, large email text `thawdezin@proton.me`, a **"Copy"** button (turns into `✓ Copied` with mint feedback), and an external arrow `↗` for `mailto:`.
-   - **Secondary Card (`thawdezin@duck.com`):**
-     - Matching tactile card style with label `ALIAS / QUICK REACH`, email `thawdezin@duck.com`, and one-click Copy action.
+     - Displays label `EMAIL · DIRECT`, large email text `thawdezin@duck.com`, a **"Copy"** button (turns into `✓ Copied` with mint feedback), and an external arrow `↗` for `mailto:`.
+   - **Telegram Card (`@appsbytdz`):**
+     - Matching tactile card style with label `TELEGRAM · DIRECT MESSAGE`, handle `@appsbytdz`, and an **"Open"** link to `https://t.me/appsbytdz` (`target="_blank"`). No Proton address anywhere.
 4. **Structured Social & Store Links Grid (Footer Bottom):**
    - Clean horizontal divider (`1px solid rgba(255,255,255,0.08)`).
    - Left side: Short personal sign-off (`"Designed & engineered by Thaw De Zin · Building useful software since 2018."`).
