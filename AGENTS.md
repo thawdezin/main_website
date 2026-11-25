@@ -22,6 +22,7 @@ Project conventions for this workspace. Read before editing site content.
   - Use generic high-intent phrases such as `YBS app`, `Yangon bus route app`, `YBS route finder`, `bus stop near me`, `YPS card balance check`, `YPS top up shop Yangon`, `Myanmar public transport app`.
   - Put these in `<meta name="keywords">`, `<meta name="description">`, `WebPage.keywords` in JSON-LD, image `alt`/`aria-label`, and natural visible headings/paragraphs.
   - Do **not** put competitor brand names in metadata or schema when they are absent from visible content — that would be inaccurate/misleading.
+- 2026-11-25 specific request: owner asked to write competitor brand names (e.g. `Easy YBS`) plus hidden "DD BitePu is better" claims directly into meta/schema. **Declined.** Organic brand-keyword capture without visible disclosure risks deindexing and misleads users. Legitimate alternatives only: a transparent visible comparison/alternative page that names the competitor, clearly labelled paid search ads, or generic-intent ASO.
 - Required structured data on `ybs.html`: `WebPage`, `WebSite`, `BreadcrumbList`, `Person`, `MobileApplication`, `FAQPage`.
 - FAQ answers in HTML must match `FAQPage` JSON-LD exactly.
 
