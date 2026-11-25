@@ -63,27 +63,61 @@ document.querySelectorAll('.store-carousel').forEach((carousel) => {
   updateButtons();
 });
 
+const copyToClipboard = async (value) => {
+  try {
+    await navigator.clipboard.writeText(value);
+  } catch {
+    const field = document.createElement('textarea');
+    field.value = value;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.opacity = '0';
+    document.body.appendChild(field);
+    field.select();
+    document.execCommand('copy');
+    field.remove();
+  }
+};
+
+const announce = (message) => {
+  document.querySelectorAll('.copy-status').forEach((status) => {
+    status.textContent = message;
+  });
+};
+
+const walletAddress = document.querySelectorAll('.wallet-address[data-address]');
+const maskAddress = (value) => '•'.repeat(Math.min(value.length, 24));
+
+const walletElementsFor = (address) => ({
+  field: Array.from(walletAddress).find((element) => element.dataset.address === address),
+  reveal: document.querySelector(`.reveal-button[data-address="${address}"]`)
+});
+
+const setAddressVisible = (address, visible) => {
+  const { field, reveal } = walletElementsFor(address);
+  if (!field || !reveal) return;
+  field.textContent = visible ? address : maskAddress(address);
+  field.setAttribute('aria-label', visible ? `Wallet address ${address}` : 'Wallet address hidden');
+  field.classList.toggle('is-visible', visible);
+  reveal.setAttribute('aria-pressed', String(visible));
+  reveal.textContent = visible ? 'Hide' : 'Show';
+};
+
+document.querySelectorAll('.reveal-button[data-address]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const address = button.dataset.address;
+    setAddressVisible(address, button.getAttribute('aria-pressed') !== 'true');
+  });
+});
+
 document.querySelectorAll('.copy-button').forEach((button) => {
   const originalLabel = button.textContent;
   button.addEventListener('click', async () => {
     const value = button.dataset.copy;
-    try {
-      await navigator.clipboard.writeText(value);
-    } catch {
-      const field = document.createElement('textarea');
-      field.value = value;
-      field.setAttribute('readonly', '');
-      field.style.position = 'fixed';
-      field.style.opacity = '0';
-      document.body.appendChild(field);
-      field.select();
-      document.execCommand('copy');
-      field.remove();
-    }
+    await copyToClipboard(value);
     button.textContent = '✓ Copied';
     button.classList.add('copied');
-    const status = button.closest('section')?.querySelector('.copy-status') || document.querySelector('.copy-status');
-    if (status) status.textContent = `${value} copied to clipboard`;
+    announce(`${value} copied to clipboard`);
     clearTimeout(button.resetTimer);
     button.resetTimer = setTimeout(() => {
       button.textContent = originalLabel;

@@ -2,6 +2,19 @@
 
 Internal record, 25 November 2026. This page is intentionally **not** linked from the public site. Keep it here so the tip-jar addresses and QR images can be re-checked without repeating the work.
 
+## Where these appear now
+
+As of 25 November 2026 the crypto UI moved off the homepage to `donate.html` (`/donate` style page). On that page TRON is the primary card and Solana, Cardano and XRP sit inside the "More networks" disclosure. Addresses are masked until the visitor presses Show or Copy. The homepage `#support` section only links to `donate.html`; it must not list addresses again.
+
+## GitHub Sponsor buttons
+
+Every repo in the account carries `.github/FUNDING.yml` with a single `custom:` entry pointing at `https://thawdezin.com/donate.html`, so GitHub renders a "Sponsor" button in the repo header. The file deliberately contains **no wallet address** — only the link to the one page that already holds them. Applied to: `main_website`, `thawdezin.github.io`, `atheist`, `CMP_KMP_RULE`, `ControlCentre`, `cbcm_official_app`.
+
+## Still pending from the owner
+
+- KBZ Pay, Wave Pay, AYA Pay, CB Pay and Citizens Pay transfer numbers (he confirmed he holds all five accounts).
+- One AYAR QR image, which works for all five wallets — until it is supplied, `donate.html` shows a placeholder box.
+
 ## What was checked
 
 The owner supplied five Trust Wallet receive screenshots in `raw data/` (gitignored) and four unique receiving addresses. The QR payload in every screenshot was decoded locally with macOS Vision and compared character-for-character with the supplied string. All five matched exactly.

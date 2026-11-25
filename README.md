@@ -14,7 +14,7 @@ Then open `http://localhost:4173`.
 
 ## Deployment
 
-The production target is Cloudflare Workers Static Assets. Until the custom domain is ready, deployments use the project's `*.workers.dev` address.
+The production target is Cloudflare Workers Static Assets. Until the custom domain is ready, deployments use the project's `*.workers.dev` address. The clean tip-jar URL is `/donate`, which Cloudflare serves from `donate.html`; use `donate.html` for `file://` previews.
 
 ```bash
 npm install
@@ -26,6 +26,7 @@ The root asset directory is intentional. `.assetsignore` ensures development fil
 ## Structure
 
 - `index.html` — homepage, cross-platform app carousel, metadata, Open Graph, and Person structured data
+- `donate.html` — optional tip jar: Myanmar wallet transfers (KBZ Pay, Wave Pay, AYA Pay, CB Pay, Citizens Pay) first, crypto second with USDT on TRON as the primary chain
 - `ybs.html` — DD BitePu YBS app guide with FAQ and `MobileApplication` structured data
 - `yangon-bus-app.html` — companion intent page for Yangon bus app searches
 - `burmese-chess.html` — Burmaland download page for Burmese chess, with mobile and desktop install links

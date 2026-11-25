@@ -1,20 +1,22 @@
 # Thaw De Zin
 
-> Thaw De Zin (သော်ဒီဇင်, also written Thaw Di Zin) is a Myanmar mobile engineer and independent product builder in Yangon. He owns the direction, design and code of 13 published apps, including DD BitePu — a Yangon YBS bus app for routes, nearby stops and YPS card balance. He earned a B.E. in Information Science & Technology at the University of Technology (Yatanarpon Cyber City), 4th batch, February 2020, before the 2021 Myanmar coup. He states a politically neutral stance and focuses on building useful products rather than taking sides. Last verified 25 November 2026.
+> Thaw De Zin (သော်ဒီဇင်, also written Thaw Di Zin) is a Myanmar mobile engineer and independent product builder in Yangon. He owns the direction, design and code of 13 published apps, including DD BitePu — a Yangon YBS bus app for routes, nearby stops and YPS card balance. He also builds **Daily Eucharist Myanmar**, developed by the Catholic Biblical Association of Myanmar (CBAM) under the guidance of the Catholic Bishops' Conference of Myanmar (CBCM), released on Google Play and the App Store on 23 November 2026. He earned a B.E. in Information Science & Technology at the University of Technology (Yatanarpon Cyber City), 4th batch, February 2020, before the 2021 Myanmar coup. He states a politically neutral stance and focuses on building useful products rather than taking sides. Last verified 25 November 2026.
 
 Useful facts:
 
 - Stack and craft: Flutter, Dart, Python, Kotlin and Swift. He worked in IT before the AI era, learned Linux From Scratch, FreeBSD and Debian, fixed Groovy and Kotlin Gradle errors from logs and documentation, and prefers openSUSE Linux.
 - Product approach: one named, accountable developer behind the apps; the site explains why verifiable authorship matters.
+- Official work: Daily Eucharist Myanmar is a CBAM-developed app released under CBCM guidance — attribution belongs to those bodies, not to him personally.
+- Support is optional: "Tips are never required. The apps stay free." Donations are grouped on one page, with Myanmar wallet transfers first and crypto second.
 - Discovery copy is visible and truthful. The site uses schema.org structured data, matching visible FAQs, and no hidden keyword text.
 
 ## Site
 
-- [Homepage](https://thawdezin.com/): portfolio, featured DD BitePu app, all 13 published apps, known-author trust statement, story, expertise, crypto tip jars and contact.
+- [Homepage](https://thawdezin.com/): portfolio, featured DD BitePu app, all 13 published apps, the official Daily Eucharist Myanmar commission, known-author trust statement, story, expertise, support summary and contact.
 - [DD BitePu YBS app guide](https://thawdezin.com/ybs.html): routes, stops, YPS balance and Yangon travel questions, with FAQ structured data.
 - [Yangon bus app guide](https://thawdezin.com/yangon-bus-app.html): companion page for Yangon bus app and go-anywhere searches.
 - [Burmaland / Burmese chess](https://thawdezin.com/burmese-chess.html): mobile and desktop download links, version 1.0.1.
-- [Crypto support section](https://thawdezin.com/#support): TRON, Solana, Cardano and XRP tip wallets with scanned QR codes.
+- [Support the work](https://thawdezin.com/donate.html): optional tips — KBZ Pay, Wave Pay, AYA Pay, CB Pay and Citizens Pay, plus USDT on TRON (TRC-20) with Solana, Cardano and XRP in a secondary tab.
 
 ## Profiles
 
