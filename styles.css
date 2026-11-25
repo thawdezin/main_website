@@ -229,6 +229,38 @@ img { max-width: 100%; display: block; }
 @media (max-width: 900px) { .store-showcase { padding: 70px 0; } .store-card { flex-basis: 270px; } }
 @media (max-width: 600px) { .store-showcase { padding: 75px 0; } .carousel-hint { font-size: .64rem; } .store-card { flex-basis: min(82vw, 290px); } }
 
+/* Burmese chess download page */
+.app-download { padding: 70px 0 95px; }
+.download-panel { max-width: 860px; background: rgba(255,255,255,.55); border: 1px solid var(--line); border-radius: 22px; padding: 44px 48px; box-shadow: 0 24px 70px rgba(11,16,14,.08); }
+.app-header { display: flex; align-items: center; gap: 24px; margin-bottom: 28px; }
+.app-header img { width: 88px; height: 88px; border-radius: 20px; box-shadow: 0 10px 30px rgba(11,16,14,.18); }
+.app-header .eyebrow { margin-bottom: 10px; }
+.app-header h1 { font: 500 clamp(2rem, 4vw, 3.4rem)/1.05 'Manrope'; letter-spacing: -.055em; margin: 0; }
+.app-tagline { color: var(--muted); font-size: .95rem; margin: 10px 0 0; }
+.app-description { color: var(--muted); line-height: 1.8; font-size: 1rem; margin: 0 0 36px; }
+.app-description strong { color: var(--ink); }
+.download-group { margin-bottom: 34px; }
+.download-group h2 { font-size: .74rem; text-transform: uppercase; letter-spacing: .18em; color: var(--orange); margin: 0 0 16px; font-weight: 700; }
+.platform-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.platform-button { display: flex; align-items: center; gap: 14px; padding: 17px 19px; background: var(--ink); color: var(--paper); border-radius: 14px; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+.platform-button:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(11,16,14,.22); }
+.platform-button .p-icon { font-size: 1.5rem; line-height: 1; }
+.platform-button span:nth-child(2) { flex: 1; }
+.platform-button strong { display: block; font-size: .92rem; }
+.platform-button small { display: block; font-size: .72rem; opacity: .7; margin-top: 3px; }
+.feature-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.feature-chip { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,.7); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; font-size: .86rem; }
+.feature-chip span { font-size: 1.15rem; }
+.app-download .faq-list { border-top: 1px solid var(--line); }
+.version-note { margin: 36px 0 0; padding-top: 20px; border-top: 1px solid var(--line); text-align: center; font-size: .78rem; color: var(--muted); }
+@media (max-width: 700px) {
+  .app-download { padding: 45px 0 70px; }
+  .download-panel { padding: 28px 22px; border-radius: 16px; }
+  .app-header { align-items: flex-start; gap: 16px; }
+  .app-header img { width: 68px; height: 68px; border-radius: 16px; }
+  .platform-row, .feature-grid-2 { grid-template-columns: 1fr; }
+}
+
 /* YBS guide page */
 .guide { padding-bottom: 20px; }
 .guide-hero { padding: 70px 0 85px; max-width: 980px; }

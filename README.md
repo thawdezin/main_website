@@ -25,12 +25,15 @@ The root asset directory is intentional. `.assetsignore` ensures development fil
 
 ## Structure
 
-- `index.html` — content, metadata, Open Graph, and Person structured data
-- `ybs.html` — YBS app guide: direct answers, honest app comparison, FAQ, `MobileApplication` + `FAQPage` + `BreadcrumbList` structured data
+- `index.html` — homepage, cross-platform app carousel, metadata, Open Graph, and Person structured data
+- `ybs.html` — DD BitePu YBS app guide with FAQ and `MobileApplication` structured data
+- `yangon-bus-app.html` — companion intent page for Yangon bus app searches
+- `burmese-chess.html` — Burmaland download page for Burmese chess, with mobile and desktop install links
+- `assets/app-icons/` — store icons used by the homepage carousel
 - `styles.css` — responsive visual system and motion
-- `script.js` — mobile navigation and progressive reveal behavior
+- `script.js` — mobile navigation, progressive reveal behavior, and carousel controls
 - `robots.txt` / `sitemap.xml` — search engine discovery
 
 ## SEO / AI visibility notes
 
-Search intent is targeted with visible, sourced content and machine-readable schema — not hidden keyword text, which Google treats as spam. Update `ybs.html` when store ratings, versions, or route data change, and keep the visible FAQ answers identical to the `FAQPage` JSON-LD.
+Search intent is targeted with visible, sourced content and machine-readable schema — not hidden keyword text, which Google treats as spam. Update `ybs.html` when store ratings, versions, or route data change, and keep the visible FAQ answers identical to the `FAQPage` JSON-LD on both guide pages. `burmese-chess.html` mirrors the download layout from `thawdezin.vercel.app/chess` using verified store and GitHub installer links.

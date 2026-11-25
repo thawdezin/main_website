@@ -33,7 +33,9 @@ document.querySelectorAll('.reveal').forEach((element, index) => {
   revealObserver.observe(element);
 });
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+document.querySelectorAll('#year, #year-footer').forEach((element) => {
+  element.textContent = new Date().getFullYear();
+});
 
 document.querySelectorAll('.store-carousel').forEach((carousel) => {
   const buttons = document.querySelectorAll(`[data-carousel="${carousel.id}"]`);
