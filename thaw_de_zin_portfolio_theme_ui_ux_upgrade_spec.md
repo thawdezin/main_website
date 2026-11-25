@@ -74,7 +74,7 @@ Gradients are used sparingly, only at four focal points:
 
 ## 3. Typography & Hierarchy
 
-- **Display / Headings & UI Labels:** `'Plus Jakarta Sans'` in the fallback stack `'Pyidaungsu', 'Noto Sans Myanmar', sans-serif`. Hero `h1`: `font-weight: 700`, `letter-spacing: -0.02em`, `line-height: 1.12`. The accent phrase `that work where real life happens.` uses the same sans family (no italic serif) with the `--gradient-hero-text` fill and `background-clip: text`.
+- **Display / Headings & UI Labels:** `'Plus Jakarta Sans'` in the fallback stack `'Pyidaungsu', 'Noto Sans Myanmar', sans-serif`. Hero `h1`: `font-weight: 700`, `letter-spacing: -0.02em`, `font-size: clamp(2.8rem, 4.4vw, 4.6rem)`, `line-height: 1.1` — sized so the "I own…" intro and actions stay visible in the first desktop viewport. The accent phrase `that work where real life happens.` uses the same sans family (no italic serif) with the `--gradient-hero-text` fill and `background-clip: text`.
 - **Body Copy:** `'Inter'` with `400` weight, `16px`–`18px`, `line-height: 1.65`, `max-width: 58ch`, colour `#3F3F46`. Bold highlights use `500`, not `700`, and primary text is `#18181B`.
 - **Technical Metadata / Eyebrows / Version Numbers / Technical Badges:** `'JetBrains Mono'` only. Eyebrow tags: `0.75rem`, `font-weight: 500`, `letter-spacing: 0.08em`, `color: #52525B`, uppercase.
 - **Burmese Script Readiness:** Include `'Pyidaungsu', 'Noto Sans Myanmar', sans-serif` in every font stack so Myanmar product names (`DD BitePu`, Burmese dictionary entries) render cleanly.
@@ -128,7 +128,8 @@ Gradients are used sparingly, only at four focal points:
    - Refine headline & framing to highlight both **product craft** and **engineering depth**:
      - Eyebrow: `MOBILE ENGINEER & PRODUCT BUILDER · YANGON`
      - Headline: **"I build resilient mobile apps that work where real life happens."** The phrase `that work where real life happens.` carries the `--gradient-hero-text` fill, unified sans-serif, no italic serif.
-     - Keep the clean portrait + `100K+`, `13 published apps`, `2018` proof metrics, styled with subtle borders, a low-opacity ambient radial glow and warm alabaster elevation.
+     - Let the portrait fill the full right column (`width: 100%` on `.hero-visual` and `.portrait-frame`) so it reads as a large half-bleed image, not a floating thumbnail.
+     - Keep the clean portrait + `100K+`, `13 published apps`, `B.E.` proof metrics, styled with subtle borders, a low-opacity ambient radial glow and warm alabaster elevation.
 3. **Micro-Interactions & Motion Rules:**
    - Smooth scroll-reveal (`opacity: 0 -> 1`, `translateY: 16px -> 0`, `500ms cubic-bezier(0.22, 1, 0.36, 1)`).
    - Card hover transitions (`200ms ease`) with crisp border contrast—never bouncy or cartoonish.
