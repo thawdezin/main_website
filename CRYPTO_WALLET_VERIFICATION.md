@@ -12,8 +12,16 @@ Every repo in the account carries `.github/FUNDING.yml` with a single `custom:` 
 
 ## Still pending from the owner
 
-- KBZ Pay, Wave Pay, AYA Pay, CB Pay and Citizens Pay transfer numbers (he confirmed he holds all five accounts).
 - One AYAR QR image, which works for all five wallets — until it is supplied, `donate.html` shows a placeholder box.
+
+## Myanmar wallet identity (supplied 2026-11-25)
+
+| Field | Value |
+| --- | --- |
+| Phone number (all five wallets) | `09797990911` |
+| Account name shown by the wallet | `Thaw De Zin` |
+
+This one number is published on `donate.html` and in the homepage `#support` block, on every wallet card. Both pages also carry a mandatory anti-scam warning: anyone asking for money under his name with a **different number or a different account name is impersonating him**, and the visitor must stop and not send. Do not add a second number unless the owner supplies it explicitly.
 
 ## What was checked
 
