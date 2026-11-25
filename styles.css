@@ -201,6 +201,15 @@ button { font: inherit; }
 .store-card-links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: auto; padding-top: 15px; border-top: 1px solid var(--border-subtle); }
 .store-card-links a { font-size: .72rem; font-weight: 700; color: var(--accent-primary); text-underline-offset: 4px; }
 
+/* Known-author trust */
+.trust { padding: 100px 0; }
+.trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.trust-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 18px; padding: 30px; transition: transform .2s var(--ease), border-color .2s; }
+.trust-card:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+.trust-number { font: 600 .68rem 'JetBrains Mono', monospace; color: var(--accent-primary); letter-spacing: .1em; }
+.trust-card h3 { margin: 26px 0 12px; font-weight: 600; font-size: 1.25rem; letter-spacing: -.03em; }
+.trust-card p { margin: 0; font-size: .84rem; line-height: 1.75; color: var(--text-secondary); }
+
 /* Story */
 .story { padding: 120px 0; background: var(--bg-surface-subtle); }
 .story-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; }
@@ -403,6 +412,7 @@ button { font: inherit; }
   .contact-meta { grid-template-columns: 1fr; gap: 26px; }
   .store-showcase { padding: 70px 0; }
   .store-card { flex-basis: 270px; }
+  .trust-grid { grid-template-columns: 1fr; }
   .guide-hero { padding: 45px 0 60px; }
   .guide-section { padding: 70px 0; }
   .feature-grid { grid-template-columns: 1fr 1fr; }
@@ -423,7 +433,7 @@ button { font: inherit; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 16px; }
   .hero-proof { grid-template-columns: 1fr; gap: 16px; }
   .hero-proof div + div { border-left: 0; border-top: 1px solid var(--border-subtle); padding: 14px 0 0; }
-  .manifesto, .work, .story, .expertise { padding: 85px 0; }
+  .manifesto, .work, .story, .expertise, .trust { padding: 85px 0; }
   .manifesto h2 { font-size: 2.9rem; }
   .manifesto-principle { grid-template-columns: 42px 1fr; gap: 12px; padding: 18px 0; }
   .project-copy { padding: 30px 22px; }
