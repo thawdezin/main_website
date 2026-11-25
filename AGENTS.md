@@ -6,6 +6,9 @@ Project conventions for this workspace. Read before editing site content.
 
 - Owner: **Thaw De Zin / သော်ဒီဇင် / Thaw Di Zin**, Myanmar mobile engineer and independent product builder.
 - Flagship product: **DD BitePu — Yangon YBS bus app** (Android + iOS).
+- Verified education (from `thawdezin.github.io`): B.E. Information Science and Technology, University of Technology (Yatanarpon Cyber City), 4th batch, February 2020. Use this exact wording for credibility.
+- Verified profiles to keep in `sameAs` and the contact section: GitHub, LinkedIn, Stack Overflow (1.7k reputation), Behance, `thawdezin.github.io`, `thawdezin.vercel.app`, Google Play developer, App Store developer. Emails: `thawdezin@proton.me` (primary) and `thawdezin@duck.com` (from GitHub Pages).
+- Internal links must be relative (`index.html`, `index.html#story`) so local `file://` previews work; do not use `href="/"`.
 
 ## Content rules
 
