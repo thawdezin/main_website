@@ -82,7 +82,7 @@ document.querySelectorAll('.copy-button').forEach((button) => {
     }
     button.textContent = '✓ Copied';
     button.classList.add('copied');
-    const status = document.querySelector('.copy-status');
+    const status = button.closest('section')?.querySelector('.copy-status') || document.querySelector('.copy-status');
     if (status) status.textContent = `${value} copied to clipboard`;
     clearTimeout(button.resetTimer);
     button.resetTimer = setTimeout(() => {

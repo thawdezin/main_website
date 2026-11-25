@@ -240,6 +240,32 @@ button { font: inherit; }
 .tags { margin-top: auto; display: flex; flex-wrap: wrap; gap: 7px; }
 .tags b { border: 1px solid var(--border-subtle); background: var(--bg-primary); padding: 6px 10px; border-radius: 99px; font-size: .62rem; font-weight: 600; color: var(--text-secondary); font-family: 'JetBrains Mono', monospace; }
 
+/* Support / crypto tip jars */
+.support { background: var(--bg-surface-subtle); padding: clamp(90px, 10vw, 130px) 0; border-top: 1px solid var(--border-subtle); }
+.support .section-heading > p [lang='my'] { display: block; margin-top: 8px; }
+.support-warning { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-left: 3px solid var(--accent-warm); border-radius: 12px; padding: 20px 24px; }
+.support-warning p { margin: 0; font-size: .84rem; line-height: 1.75; color: var(--text-secondary); }
+.support-warning p + p { margin-top: 6px; }
+.support-warning-title strong { color: var(--accent-warm); font-family: 'Plus Jakarta Sans', 'Pyidaungsu', 'Noto Sans Myanmar', sans-serif; font-size: .86rem; }
+.wallet-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 36px; }
+.wallet-card { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 22px; align-items: start; padding: 22px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 18px; box-shadow: 0 12px 32px rgba(20,21,23,.04); transition: transform .2s var(--ease), border-color .2s; }
+.wallet-card:hover { transform: translateY(-3px); border-color: var(--border-strong); }
+.wallet-qr { width: 168px; aspect-ratio: 1; padding: 8px; background: #fff; border: 1px solid var(--border-subtle); border-radius: 14px; }
+.wallet-qr img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+.wallet-network { margin: 0 0 8px; font: 600 .6rem 'JetBrains Mono', monospace; letter-spacing: .12em; color: var(--accent-primary); text-transform: uppercase; }
+.wallet-card h3 { margin: 0 0 6px; font-weight: 600; font-size: 1.35rem; letter-spacing: -.035em; }
+.wallet-asset { margin: 0 0 14px; font-size: .76rem; line-height: 1.6; color: var(--text-muted); }
+.wallet-hint { margin: 0 0 16px; font-size: .78rem; line-height: 1.65; color: var(--text-secondary); }
+.wallet-hint [lang='my'] { display: block; margin-top: 6px; color: var(--text-muted); }
+.wallet-address-label { margin: 0 0 6px; font: 600 .58rem 'JetBrains Mono', monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); }
+.wallet-address { margin: 0 0 12px; padding: 9px 11px; background: var(--bg-surface-subtle); border: 1px solid var(--border-subtle); border-radius: 8px; font: 500 .72rem/1.6 'JetBrains Mono', monospace; overflow-wrap: anywhere; color: var(--text-primary); }
+.wallet-card .copy-button { color: var(--accent-primary); border-color: var(--border-strong); }
+.wallet-card .copy-button:hover { border-color: var(--accent-primary); background: var(--accent-soft); }
+.wallet-card .copy-button.copied { background: var(--accent-primary); color: #fff; border-color: var(--accent-primary); }
+.support-footnote { margin: 30px 0 0; font-size: .8rem; line-height: 1.7; color: var(--text-secondary); }
+.support-verified { margin: 12px 0 0; font-size: .7rem; line-height: 1.7; color: var(--text-muted); }
+.support-footnote [lang='my'], .support-verified [lang='my'] { display: block; margin-top: 5px; }
+
 /* Contact — Obsidian closing stage */
 .contact { background: var(--gradient-contact); color: var(--stage-dark-text); padding: clamp(88px, 10vw, 140px) 0 80px; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,.08); }
 .contact::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 80% 20%, rgba(45,212,191,.08), transparent 50%); }
@@ -380,6 +406,7 @@ button { font: inherit; }
   .expertise-card { min-height: 300px; }
   .expertise-card h3 { margin-top: 32px; }
   .email-grid { grid-template-columns: 1fr; }
+  .wallet-grid { grid-template-columns: 1fr; }
   .contact-meta { grid-template-columns: 1fr; gap: 26px; }
   .store-showcase { padding: 70px 0; }
   .store-card { flex-basis: 270px; }
@@ -413,6 +440,9 @@ button { font: inherit; }
   .contact { padding: 80px 0 60px; }
   .contact h2 { font-size: 2.6rem; }
   .email-row { align-items: flex-start; flex-direction: column; }
+  .support-warning { padding: 16px 18px; }
+  .wallet-card { grid-template-columns: 1fr; gap: 18px; padding: 18px; }
+  .wallet-qr { width: min(180px, 55vw); margin-inline: auto; }
   .link-groups { grid-template-columns: 1fr 1fr; }
   .site-footer-inner { padding: 26px 20px; grid-template-columns: 1fr 1fr; gap: 16px; }
   .site-footer p:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
