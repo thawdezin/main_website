@@ -153,21 +153,10 @@ button { font: inherit; }
 .map-pin { position: absolute; z-index: 1; width: 24px; height: 24px; background: var(--stage-dark-bg); border: 6px solid var(--bg-surface); border-radius: 50% 50% 50% 0; transform: rotate(-45deg); }
 .map-pin span { display: block; width: 100%; height: 100%; border-radius: 50%; background: var(--accent-primary); }
 .pin-one { left: 16%; top: 24%; } .pin-two { right: 13%; bottom: 17%; }
-.phone-mockup { position: absolute; z-index: 2; width: min(290px, 65%); height: 560px; left: 50%; top: 50%; transform: translate(-50%,-48%) rotate(4deg); background: #141517; border-radius: 44px; padding: 10px; box-shadow: 0 40px 80px rgba(20,21,23,.22); }
-.phone-speaker { width: 28%; height: 22px; background: #141517; position: absolute; z-index: 2; top: 8px; left: 36%; border-radius: 0 0 14px 14px; }
-.phone-screen { background: var(--bg-primary); height: 100%; border-radius: 36px; padding: 28px 18px 18px; overflow: hidden; }
-.mini-status { display: flex; justify-content: space-between; font-size: .55rem; color: var(--text-muted); }
-.mini-greeting { font-size: 1.2rem; margin: 40px 0 18px; line-height: 1.2; letter-spacing: -.03em; }
-.mini-search { background: #fff; border: 1px solid var(--border-subtle); border-radius: 11px; padding: 12px; font-size: .58rem; color: var(--text-muted); box-shadow: 0 8px 18px rgba(20,21,23,.05); }
-.mini-map { height: 200px; margin-top: 13px; border-radius: 13px; position: relative; background-color: #e6ebe4; background-image: linear-gradient(40deg, transparent 48%, white 49%, white 53%, transparent 54%), linear-gradient(-35deg, transparent 47%, #d3ddd0 48%, #d3ddd0 51%, transparent 52%); }
-.mini-map::after { content: ''; position: absolute; width: 70%; height: 40%; border: 3px solid var(--accent-primary); border-left: 0; border-radius: 50%; transform: rotate(-30deg); top: 25%; left: 10%; }
-.mini-map i, .mini-map b { position: absolute; width: 14px; height: 14px; background: var(--stage-dark-bg); border: 4px solid #fff; border-radius: 50%; z-index: 2; }
-.mini-map i { left: 28%; top: 48%; } .mini-map b { right: 18%; top: 20%; background: var(--accent-primary); }
-.mini-sheet { background: #fff; border: 1px solid var(--border-subtle); border-radius: 14px; padding: 14px; transform: translateY(-18px); box-shadow: 0 10px 24px rgba(20,21,23,.08); }
-.mini-sheet small, .mini-sheet strong, .mini-sheet p { display: block; margin: 0; }
-.mini-sheet small { font-size: .46rem; color: var(--text-muted); letter-spacing: .12em; font-family: 'JetBrains Mono', monospace; }
-.mini-sheet strong { margin: 5px 0; font-size: .78rem; }
-.mini-sheet p { font-size: .55rem; color: var(--text-muted); }
+.phone-mockup { position: absolute; z-index: 2; width: min(270px, 62%); aspect-ratio: 270 / 564; left: 50%; top: 50%; transform: translate(-50%,-48%) rotate(4deg); background: #141517; border-radius: 44px; padding: 9px; box-shadow: 0 40px 80px rgba(20,21,23,.22); }
+.phone-speaker { width: 26%; height: 18px; background: #141517; position: absolute; z-index: 2; top: 8px; left: 37%; border-radius: 0 0 14px 14px; }
+.phone-screen { background: #fff; height: 100%; border-radius: 36px; overflow: hidden; }
+.phone-screen img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
 .project-small { min-height: 430px; padding: 30px; display: flex; flex-direction: column; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 18px; transition: transform .2s var(--ease), border-color .2s, box-shadow .2s; }
 .project-small:hover { transform: translateY(-3px); border-color: var(--border-strong); box-shadow: 0 16px 40px rgba(20,21,23,.06); }
@@ -433,9 +422,8 @@ button { font: inherit; }
   .manifesto h2 { font-size: 2.9rem; }
   .project-copy { padding: 30px 22px; }
   .project-metrics { flex-wrap: wrap; gap: 16px; }
-  .project-art { min-height: 480px; }
-  .phone-mockup { height: 450px; }
-  .mini-map { height: 150px; }
+  .project-art { min-height: 520px; }
+  .phone-mockup { width: min(240px, 62%); }
   .project-small { padding: 26px 22px; }
   .contact { padding: 80px 0 60px; }
   .contact h2 { font-size: 2.6rem; }
