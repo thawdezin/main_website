@@ -9,6 +9,7 @@ Project conventions for this workspace. Read before editing site content.
 - Verified education (from `thawdezin.github.io`): B.E. Information Science and Technology, University of Technology (Yatanarpon Cyber City), 4th batch, February 2020. Use this exact wording for credibility.
 - Verified profiles to keep in `sameAs` and the contact section: GitHub, LinkedIn, Stack Overflow (1.7k reputation), Behance, `thawdezin.github.io`, `thawdezin.vercel.app`, Google Play developer, App Store developer. Emails: `thawdezin@proton.me` (primary) and `thawdezin@duck.com` (from GitHub Pages).
 - Internal links must be relative (`index.html`, `index.html#story`) so local `file://` previews work; do not use `href="/"`.
+- Inspiration sources checked 2026-11-25: `thawdezin.web.app` is currently empty (nothing to reuse); `thawdezin.netlify.app` supplied the code-card motif now used as `.dev-code` on the homepage; `thawdezin.vercel.app` supplied the "outside product work" personal line (Cardano, Thai, coffee). Do not reuse unverified claims, political content, or the DoS-tool link from those pages.
 
 ## Content rules
 
