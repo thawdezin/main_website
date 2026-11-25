@@ -1,0 +1,13 @@
+{
+  "name": "thawdezin-com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thaw De Zin's personal brand website",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.102.0"
+  }
+}
