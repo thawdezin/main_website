@@ -124,10 +124,9 @@ button { font: inherit; }
 .manifesto-inner { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
 .manifesto-lead h2 { margin: 0; color: var(--stage-dark-text); font-weight: 500; font-size: clamp(1.9rem, 3.2vw, 3rem); line-height: 1.15; letter-spacing: -.035em; }
 .manifesto-principles { border-top: 1px solid rgba(255,255,255,.12); }
-.manifesto-principle { display: grid; grid-template-columns: 52px 1fr; align-items: baseline; gap: 18px; padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
-.manifesto-principle span { font: 500 .68rem 'JetBrains Mono', monospace; letter-spacing: .12em; color: var(--stage-dark-accent); }
-.manifesto-principle span::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: currentColor; margin-right: 10px; vertical-align: middle; }
+.manifesto-principle { padding: 24px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
 .manifesto-principle p { margin: 0; font-size: clamp(1rem, 1.4vw, 1.25rem); line-height: 1.4; color: rgba(244,244,246,.58); }
+.manifesto-principle p::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--stage-dark-accent); margin-right: 13px; vertical-align: middle; }
 .manifesto-principle b { margin-left: 10px; color: var(--stage-dark-accent); font-weight: 600; }
 
 /* Work */
@@ -435,7 +434,7 @@ button { font: inherit; }
   .hero-proof div + div { border-left: 0; border-top: 1px solid var(--border-subtle); padding: 14px 0 0; }
   .manifesto, .work, .story, .expertise, .trust { padding: 85px 0; }
   .manifesto-lead h2 { font-size: 2.2rem; }
-  .manifesto-principle { grid-template-columns: 42px 1fr; gap: 12px; padding: 18px 0; }
+  .manifesto-principle { padding: 18px 0; }
   .project-copy { padding: 30px 22px; }
   .project-metrics { flex-wrap: wrap; gap: 16px; }
   .project-art { min-height: 520px; }
