@@ -21,7 +21,13 @@ npm install
 npm run deploy
 ```
 
+**Full step-by-step guide: [`DEPLOY.md`](DEPLOY.md)** — covers the one-time Cloudflare login, the daily deploy command, local preview, rollback, and what must never be published.
+
 The root asset directory is intentional. `.assetsignore` ensures development files and Git metadata are never published as website assets. Add the custom domain in Cloudflare only after its registration and DNS configuration are ready.
+
+## Support
+
+All payment details live on `donate.html` — Myanmar wallets first (one number, `09797990911`, account name `Thaw De Zin`), crypto second with USDT on TRON as the primary chain. The homepage `#support` block only links there. Both pages carry a mandatory anti-scam notice. **Never place a wallet address or phone number in any other file**, including `llms.txt` and repo documents.
 
 ## Structure
 
