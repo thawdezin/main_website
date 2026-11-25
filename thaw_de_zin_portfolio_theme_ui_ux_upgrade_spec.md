@@ -26,9 +26,9 @@
   --bg-surface-subtle: #F1EFEA;   /* Muted pill / tag / secondary surface */
 
   /* Typography Hierarchy */
-  --text-primary: #141517;        /* Deep Charcoal Ink (never harsh #000) */
-  --text-secondary: #4E525B;      /* Balanced Slate for body copy */
-  --text-muted: #7C818C;          /* Metadata, eyebrows, timestamps */
+  --text-primary: #18181B;        /* High-contrast ink for headings and key copy */
+  --text-secondary: #3F3F46;      /* Balanced slate for body copy */
+  --text-muted: #52525B;          /* Metadata, eyebrows, timestamps */
 
   /* Borders & Hairlines */
   --border-subtle: rgba(20, 21, 23, 0.08);
@@ -47,22 +47,37 @@
   --stage-dark-text: #F4F4F6;
   --stage-dark-muted: #9CA3AF;
   --stage-dark-accent: #2DD4BF;   /* Luminous Mint-Teal for hover & live status */
+
+  /* Selective Gradients — focal points only */
+  --gradient-hero-text: linear-gradient(135deg, #0F766E 0%, #0D9488 55%, #0284C7 100%);
+  --gradient-ambient: radial-gradient(circle, rgba(15, 118, 110, 0.07) 0%, transparent 70%);
+  --gradient-contact: linear-gradient(160deg, #111317 0%, #161B22 60%, #0F2928 100%);
+  --gradient-cta: linear-gradient(135deg, #0F766E 0%, #115E59 100%);
 }
 ```
 
 ### Why This Palette Fits Thaw De Zin
-1. **Warm Alabaster (`#F8F7F4`) + Charcoal Ink (`#141517`):** Feels like high-craft software documentation and modern editorial design—clean, timeless, and readable.
+1. **Warm Alabaster (`#F8F7F4`) + Ink (`#18181B`):** Feels like high-craft software documentation and modern editorial design—clean, timeless, and readable.
 2. **Deep Jade (`#0F766E`) & Luminous Mint-Teal (`#2DD4BF`):** Reflects reliability, offline-first utility, privacy (`proton.me` / `duck.com`), and calm engineering confidence without visual fatigue.
 3. **Obsidian Slate (`#111317`) Closing Stage:** Replaces the jarring orange footer with a grounded, executive, high-contrast closing experience that makes visitors want to reach out.
+
+### Selective Gradient Rules
+
+Gradients are used sparingly, only at four focal points:
+
+1. **Hero accent phrase** — `--gradient-hero-text` text fill on `that work where real life happens.`; crisp and sans-serif, never an italic serif clash.
+2. **Ambient depth** — `--gradient-ambient` behind the hero portrait and the flagship DD BitePu card; low opacity, never a full-bleed wash.
+3. **Contact surface** — `--gradient-contact` diagonal Obsidian Slate gradient, transitioning into the solid `#111317` footer.
+4. **Primary CTA** — `--gradient-cta` with a gentle hover `brightness(1.08)`; no other buttons receive gradients.
 
 ---
 
 ## 3. Typography & Hierarchy
 
-- **Display / Headings:** `'Plus Jakarta Sans'`, `'Inter'`, or `'Geist'`, tracking `-0.03em`, tight line-height (`1.06`–`1.15`).
-- **Body Copy:** `'Inter'` or `'Plus Jakarta Sans'`, `16px`–`18px`, line-height `1.65`, max measure `62ch`.
-- **Technical Metadata / Tags / Metrics:** `'JetBrains Mono'` or `'Geist Mono'`, `12px`–`13px`, uppercase eyebrow tracking `0.08em`.
-- **Burmese Script Readiness:** Include `'Pyidaungsu', 'Noto Sans Myanmar', sans-serif` in the fallback stack so Myanmar product names (`DD BitePu`, Burmese dictionary entries) render cleanly.
+- **Display / Headings & UI Labels:** `'Plus Jakarta Sans'` in the fallback stack `'Pyidaungsu', 'Noto Sans Myanmar', sans-serif`. Hero `h1`: `font-weight: 700`, `letter-spacing: -0.02em`, `line-height: 1.12`. The accent phrase `that work where real life happens.` uses the same sans family (no italic serif) with the `--gradient-hero-text` fill and `background-clip: text`.
+- **Body Copy:** `'Inter'` with `400` weight, `16px`–`18px`, `line-height: 1.65`, `max-width: 58ch`, colour `#3F3F46`. Bold highlights use `500`, not `700`, and primary text is `#18181B`.
+- **Technical Metadata / Eyebrows / Version Numbers / Technical Badges:** `'JetBrains Mono'` only. Eyebrow tags: `0.75rem`, `font-weight: 500`, `letter-spacing: 0.08em`, `color: #52525B`, uppercase.
+- **Burmese Script Readiness:** Include `'Pyidaungsu', 'Noto Sans Myanmar', sans-serif` in every font stack so Myanmar product names (`DD BitePu`, Burmese dictionary entries) render cleanly.
 
 ---
 
@@ -75,7 +90,7 @@
 ### New Contact Section Blueprint ("The Obsidian Closing Stage")
 
 1. **Container & Transition:**
-   - Full-bleed `--stage-dark-bg` (`#111317`) with generous vertical padding (`clamp(5rem, 10vw, 8.5rem)`), subtle top hairline border (`1px solid rgba(255,255,255,0.08)`), and an ultra-subtle radial glow (`radial-gradient(circle at 80% 20%, rgba(45, 212, 191, 0.08), transparent 50%)`).
+   - Full-bleed `--gradient-contact` surface (`linear-gradient(160deg, #111317 0%, #161B22 60%, #0F2928 100%)`) with generous vertical padding (`clamp(5rem, 10vw, 8.5rem)`), a subtle top hairline border (`1px solid rgba(255,255,255,0.08)`), and an ultra-subtle radial glow (`radial-gradient(circle at 80% 20%, rgba(45, 212, 191, 0.08), transparent 50%)`). It resolves into the solid `#111317` footer below.
 2. **Header Block:**
    - Eyebrow pill: `● AVAILABLE FOR SELECT COLLABORATIONS` (with a soft pulsing `#2DD4BF` dot).
    - Headline (`clamp(2.4rem, 5vw, 4.25rem)`):
@@ -95,6 +110,11 @@
      - **Code & Community:** `GitHub`, `Stack Overflow · 1.7k`, `LinkedIn`
      - **Published Work:** `Google Play`, `App Store`, `Behance`
 
+### Full-Bleed Footer Rule
+
+- The bottom bar containing the `TDZ` badge, `Designed & built with intention in Myanmar.`, and `© 2026 Thaw De Zin` must be a **full viewport width** wrapper (`width: 100%`) with solid `#111317` and a `1px solid rgba(255,255,255,0.08)` top border. Never constrain the background to the centered site container — that leaves off-white gaps on the left/right and clips the copyright.
+- Keep the visible content inside a centered inner container (`max-width: ~1200px`, `margin-inline: auto`) with `padding-inline: 24px` and `40px` from `768px` up. Use a `1fr auto 1fr` grid so the copyright stays right-aligned without clipping.
+
 ---
 
 ## 5. Upgrades for the Rest of the Page (To Elevate Overall "Wow" Factor)
@@ -107,8 +127,8 @@
 2. **Hero Section Polish:**
    - Refine headline & framing to highlight both **product craft** and **engineering depth**:
      - Eyebrow: `MOBILE ENGINEER & PRODUCT BUILDER · YANGON`
-     - Headline: **"I build resilient mobile apps that work where real life happens."**
-     - Keep the clean portrait + `100K+`, `9+`, `2018` proof metrics, styled with subtle borders and warm alabaster elevation.
+     - Headline: **"I build resilient mobile apps that work where real life happens."** The phrase `that work where real life happens.` carries the `--gradient-hero-text` fill, unified sans-serif, no italic serif.
+     - Keep the clean portrait + `100K+`, `13 published apps`, `2018` proof metrics, styled with subtle borders, a low-opacity ambient radial glow and warm alabaster elevation.
 3. **Micro-Interactions & Motion Rules:**
    - Smooth scroll-reveal (`opacity: 0 -> 1`, `translateY: 16px -> 0`, `500ms cubic-bezier(0.22, 1, 0.36, 1)`).
    - Card hover transitions (`200ms ease`) with crisp border contrast—never bouncy or cartoonish.
@@ -120,4 +140,6 @@
 
 - **DO NOT** make the layout cluttered, heavy, or overloaded with flashy 3D animations.
 - **DO NOT** revert to bright orange, neon purple gradients, or low-contrast gray-on-gray text.
+- **DO** use the four selective gradients exactly as documented; no gradients elsewhere.
+- **DO** keep the footer wrapper full-bleed with the inner container centered and padded.
 - **DO** ensure mobile responsiveness (`375px` to `1440px+`), keyboard accessibility (`:focus-visible` outlines in `#2DD4BF` / `#0F766E`), and fast load performance (zero heavy runtime animation libraries required—pure CSS + lightweight vanilla JS/React state).

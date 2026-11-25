@@ -29,6 +29,8 @@ Project conventions for this workspace. Read before editing site content.
 
 - Follow the "Tactile Obsidian & Warm Alabaster" direction in `thaw_de_zin_portfolio_theme_ui_ux_upgrade_spec.md`: warm alabaster canvas (`#F8F7F4`), charcoal ink (`#141517`), deep jade accent (`#0F766E`), and an obsidian closing stage (`#111317`) with luminous mint (`#2DD4BF`).
 - Do **not** reintroduce saturated orange (`#FF6B35`), pure black-on-white, or glassmorphism blobs. Typography is Plus Jakarta Sans + JetBrains Mono, with Noto Sans Myanmar in the fallback stack.
+- The footer wrapper must stay full viewport width with solid `#111317`; only the inner `.site-footer-inner` is centered and padded. Do not put the background on `.section-shell`.
+- Use the four selective gradients only: hero accent text, low-opacity ambient glow behind portrait/flagship card, diagonal contact surface, and primary CTA hover. Body uses Inter 400, headings/UI use Plus Jakarta Sans, JetBrains Mono only for eyebrows, version numbers and technical badges.
 - The homepage contact section uses two email action cards with working Copy buttons (`script.js`); keep `data-copy` addresses in sync with the visible mailto links and the live `aria-live` status.
 - Small work cards include preview pills, stack tags and an "Architecture & craft" drawer. Keep those claims modest and truthful; do not invent architecture or metrics.
 
