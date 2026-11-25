@@ -34,6 +34,10 @@ The root asset directory is intentional. `.assetsignore` ensures development fil
 - `script.js` — mobile navigation, progressive reveal behavior, and carousel controls
 - `robots.txt` / `sitemap.xml` — search engine discovery
 
+## Design
+
+The visual system follows `thaw_de_zin_portfolio_theme_ui_ux_upgrade_spec.md`: warm alabaster surfaces, charcoal type, jade accents and an obsidian contact/footer stage. All tokens live at the top of `styles.css`; no build step or animation library is required.
+
 ## SEO / AI visibility notes
 
 Search intent is targeted with visible, sourced content and machine-readable schema — not hidden keyword text, which Google treats as spam. Update `ybs.html` when store ratings, versions, or route data change, and keep the visible FAQ answers identical to the `FAQPage` JSON-LD on both guide pages. `burmese-chess.html` mirrors the download layout from `thawdezin.vercel.app/chess` using verified store and GitHub installer links.

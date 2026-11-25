@@ -50,7 +50,7 @@ document.querySelectorAll('.store-carousel').forEach((carousel) => {
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       const card = carousel.querySelector('.store-card');
-      const step = card ? card.getBoundingClientRect().width + 18 : carousel.clientWidth * 0.8;
+      const step = card ? card.getBoundingClientRect().width + 16 : carousel.clientWidth * 0.8;
       carousel.scrollBy({
         left: button.dataset.direction === 'next' ? step : -step,
         behavior: 'smooth'
@@ -61,4 +61,33 @@ document.querySelectorAll('.store-carousel').forEach((carousel) => {
   carousel.addEventListener('scroll', updateButtons, { passive: true });
   window.addEventListener('resize', updateButtons);
   updateButtons();
+});
+
+document.querySelectorAll('.copy-button').forEach((button) => {
+  const originalLabel = button.textContent;
+  button.addEventListener('click', async () => {
+    const value = button.dataset.copy;
+    try {
+      await navigator.clipboard.writeText(value);
+    } catch {
+      const field = document.createElement('textarea');
+      field.value = value;
+      field.setAttribute('readonly', '');
+      field.style.position = 'fixed';
+      field.style.opacity = '0';
+      document.body.appendChild(field);
+      field.select();
+      document.execCommand('copy');
+      field.remove();
+    }
+    button.textContent = '✓ Copied';
+    button.classList.add('copied');
+    const status = document.querySelector('.copy-status');
+    if (status) status.textContent = `${value} copied to clipboard`;
+    clearTimeout(button.resetTimer);
+    button.resetTimer = setTimeout(() => {
+      button.textContent = originalLabel;
+      button.classList.remove('copied');
+    }, 1800);
+  });
 });

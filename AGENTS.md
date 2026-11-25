@@ -24,6 +24,13 @@ Project conventions for this workspace. Read before editing site content.
 - When store data changes, update both the visible text and the matching JSON-LD together.
 - Every page keeps a visible `Last verified` date and a correction contact.
 
+## Design system
+
+- Follow the "Tactile Obsidian & Warm Alabaster" direction in `thaw_de_zin_portfolio_theme_ui_ux_upgrade_spec.md`: warm alabaster canvas (`#F8F7F4`), charcoal ink (`#141517`), deep jade accent (`#0F766E`), and an obsidian closing stage (`#111317`) with luminous mint (`#2DD4BF`).
+- Do **not** reintroduce saturated orange (`#FF6B35`), pure black-on-white, or glassmorphism blobs. Typography is Plus Jakarta Sans + JetBrains Mono, with Noto Sans Myanmar in the fallback stack.
+- The homepage contact section uses two email action cards with working Copy buttons (`script.js`); keep `data-copy` addresses in sync with the visible mailto links and the live `aria-live` status.
+- Small work cards include preview pills, stack tags and an "Architecture & craft" drawer. Keep those claims modest and truthful; do not invent architecture or metrics.
+
 ## SEO / AI visibility rules
 
 - **Never add hidden body text, off-screen text, zero-opacity text, cloaking, or keyword stuffing.** Google classifies these as spam and can deindex the site. The owner asked for "hidden competitor keywords"; this is deliberately not implemented.
