@@ -198,5 +198,61 @@ img { max-width: 100%; display: block; }
   .project-copy { padding: 34px 25px; }.project-metrics { flex-wrap: wrap; gap: 18px; }.project-art { min-height: 520px; }.phone-mockup { height: 500px; }.mini-map { height: 170px; }
   .project-small { padding: 30px 25px; }.project-small .project-icon { margin-top: 40px; }
   .contact { padding-top: 90px; }.contact h2 { font-size: 3.2rem; }.contact-meta { align-items: flex-start; flex-direction: column; gap: 28px; }.social-links { flex-wrap: wrap; }
-  .site-footer { height: auto; padding: 35px 0; grid-template-columns: 1fr 1fr; gap: 20px; }.site-footer p:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }.site-footer p:last-child { text-align: right; }
+  .site-footer { height: auto; padding: 35px 0; grid-template-columns: 1fr 1fr; gap: 20px; }  .site-footer p:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }.site-footer p:last-child { text-align: right; }
+}
+
+/* YBS guide page */
+.guide { padding-bottom: 20px; }
+.guide-hero { padding: 70px 0 85px; max-width: 980px; }
+.guide-hero h1 { font: 500 clamp(2.6rem, 5.6vw, 5.4rem)/1.03 'Manrope'; letter-spacing: -.065em; margin: 0 0 30px; max-width: 950px; }
+.guide-lead { font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.7; color: var(--muted); max-width: 780px; margin: 0 0 35px; }
+.guide-lead strong { color: var(--ink); }
+.answer-block { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 55px 0 65px; }
+.answer-block h2, .guide-section h2, .download h2 { font: 500 clamp(2rem, 3.6vw, 3.4rem)/1.08 'Manrope'; letter-spacing: -.055em; margin: 0 0 20px; }
+.answer-block p:last-child { font-size: 1.05rem; line-height: 1.8; max-width: 850px; color: var(--muted); margin: 0; }
+.guide-section { padding: 100px 0; }
+.feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); }
+.feature-grid article { padding: 30px 28px 10px 0; border-right: 1px solid var(--line); }
+.feature-grid article + article { padding-left: 28px; }
+.feature-grid article:last-child { border-right: 0; }
+.feature-grid h3 { font: 600 1.15rem 'Manrope'; letter-spacing: -.03em; margin: 0 0 14px; }
+.feature-grid p { color: var(--muted); font-size: .84rem; line-height: 1.7; margin: 0; }
+.compare-section { background: #dfddd4; }
+.table-scroll { overflow-x: auto; }
+.compare-section table { width: 100%; border-collapse: collapse; min-width: 860px; font-size: .8rem; }
+.compare-section caption { text-align: left; font-size: .7rem; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); margin-bottom: 15px; }
+.compare-section th, .compare-section td { text-align: left; vertical-align: top; padding: 18px 16px; border-bottom: 1px solid rgba(11,16,14,.14); line-height: 1.5; }
+.compare-section thead th { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; border-top: 1px solid var(--ink); }
+.compare-section tbody th { font-weight: 600; }
+.compare-section .own-row { background: rgba(199,255,74,.35); }
+.table-note { font-size: .74rem; color: var(--muted); line-height: 1.6; margin-top: 18px; }
+.table-note a { text-underline-offset: 4px; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-list details { border-bottom: 1px solid var(--line); padding: 22px 0; }
+.faq-list summary { cursor: pointer; font: 600 1.05rem 'Manrope'; letter-spacing: -.02em; list-style: none; display: flex; justify-content: space-between; gap: 20px; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; color: var(--orange); font-size: 1.3rem; line-height: 1; }
+.faq-list details[open] summary::after { content: '\2212'; }
+.faq-list p { color: var(--muted); line-height: 1.75; max-width: 800px; margin: 16px 0 0; font-size: .92rem; }
+.download { background: var(--ink); color: white; padding: 90px 0 100px; }
+.download .eyebrow { color: var(--lime); }
+.download-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 35px; }
+.sources { padding-top: 85px; }
+.sources ul { columns: 2; column-gap: 50px; padding-left: 18px; line-height: 1.9; font-size: .84rem; color: var(--muted); }
+.sources li { break-inside: avoid; }
+.sources a { color: var(--ink); text-underline-offset: 4px; }
+@media (max-width: 900px) {
+  .guide-hero { padding: 45px 0 60px; }
+  .guide-section { padding: 70px 0; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .feature-grid article:nth-child(2n) { border-right: 0; }
+  .feature-grid article:nth-child(3) { padding-left: 0; border-top: 1px solid var(--line); }
+  .feature-grid article:nth-child(4) { border-top: 1px solid var(--line); }
+  .sources ul { columns: 1; }
+}
+@media (max-width: 600px) {
+  .guide-hero h1 { font-size: 2.6rem; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .feature-grid article, .feature-grid article + article { padding: 25px 0; border-right: 0; border-top: 1px solid var(--line); }
+  .faq-list summary { font-size: .95rem; }
 }
