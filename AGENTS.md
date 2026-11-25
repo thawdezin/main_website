@@ -7,9 +7,10 @@ Project conventions for this workspace. Read before editing site content.
 - Owner: **Thaw De Zin / သော်ဒီဇင် / Thaw Di Zin**, Myanmar mobile engineer and independent product builder.
 - Flagship product: **DD BitePu — Yangon YBS bus app** (Android + iOS).
 - Verified education (from `thawdezin.github.io`): B.E. Information Science and Technology, University of Technology (Yatanarpon Cyber City), 4th batch, February 2020. Use this exact wording for credibility.
+- The owner **deliberately** wants the graduation timing stated: "The graduation was prior to the 2021 Myanmar coup d'état" / earned in the democratic period, before the later disruption of education. Keep this factual qualifier in the visible story/timeline/table notes and in `hasCredential.description` on all pages. Do not present the degree as post-coup.
 - Verified profiles to keep in `sameAs` and the contact section: GitHub, LinkedIn, Stack Overflow (1.7k reputation), Behance, `thawdezin.github.io`, `thawdezin.vercel.app`, Google Play developer, App Store developer. Emails: `thawdezin@proton.me` (primary) and `thawdezin@duck.com` (from GitHub Pages).
 - Internal links must be relative (`index.html`, `index.html#story`) so local `file://` previews work; do not use `href="/"`.
-- Inspiration sources checked 2026-11-25: `thawdezin.web.app` is currently empty (nothing to reuse); `thawdezin.netlify.app` supplied the code-card motif now used as `.dev-code` on the homepage; `thawdezin.vercel.app` supplied the "outside product work" personal line (Cardano, Thai, coffee). Do not reuse unverified claims, placeholder certificate details, or political copy from those pages. The abandoned Oizys project is not part of this site.
+- Inspiration sources checked 2026-11-25: `thawdezin.web.app` is currently empty (nothing to reuse); `thawdezin.netlify.app` supplied the code-card motif now used as `.dev-code` on the homepage; `thawdezin.vercel.app` supplied the "outside product work" personal line (Cardano, Thai, coffee). Do not reuse unverified claims, placeholder certificate details, or other political copy from those pages — except the owner's explicitly requested graduation-before-the-2021-coup qualifier described above. The abandoned Oizys project is not part of this site.
 
 ## Content rules
 
