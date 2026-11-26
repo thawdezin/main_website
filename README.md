@@ -49,3 +49,19 @@ The visual system follows `thaw_de_zin_portfolio_theme_ui_ux_upgrade_spec.md`: w
 ## SEO / AI visibility notes
 
 Search intent is targeted with visible, sourced content and machine-readable schema — not hidden keyword text, which Google treats as spam. Update `ybs.html` when store ratings, versions, or route data change, and keep the visible FAQ answers identical to the `FAQPage` JSON-LD on both guide pages. `burmese-chess.html` mirrors the download layout from `thawdezin.vercel.app/chess` using verified store and GitHub installer links. `llms.txt` follows the llms.txt v2 format as a small, factual map for agents; it is a discovery aid, not a Google Search ranking factor, so keep every claim consistent with the visible pages and `Person` schema.
+
+## House ads feed
+
+Netlify serves the JSON feed at `https://thawdezin.netlify.app/ads` through a
+rewrite to `ads.json`. Use `/ads.json` when previewing with the static Python
+server.
+
+The response has `schemaVersion: 1` and a `campaigns` array. Each campaign has a
+stable `id`, display `title`, Burmese `message`, HTTPS WebP `imageUrl`, and
+platform-specific `androidUrl` and `iosUrl` store destinations. A store URL can
+be omitted for a single-platform campaign. Clients should show only campaigns
+with a URL for the current platform. An empty array disables house ads.
+
+Edit `ads.json` to change the inventory. After a Netlify deploy, Flutter clients
+can use the remote icon URL with their own banner, native, or full-screen
+layout. The app should handle an unavailable feed or image gracefully.

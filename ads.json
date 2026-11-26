@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "campaigns": [
+    {
+      "id": "burma-dictionary",
+      "title": "Burma – Myanmar Dictionary",
+      "message": "“ချင်၊ ခြင်”၊ “တတ်၊ တက်၊ တပ်”၊ “သုပ်၊ သုတ်၊ သုက်” အသုံးတွေ ကွဲကွဲပြားပြား သိရအောင် ဗမာ-မြန်မာ အဘိဓာန် ရှိနေပါပြီ။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/burma-dictionary-android.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=com.thawdezin.burmese_dictionary&hl=en",
+      "iosUrl": "https://apps.apple.com/mm/app/burma-myanmar-dictionary/id6755807756"
+    },
+    {
+      "id": "burmaland",
+      "title": "Burmaland",
+      "message": "နေရာတိုင်းမှာ ဗမာစစ်တုရင် ဆော့လို့ရတဲ့ App။ ဗမာငွေကြေး၊ နန်းတော်တည်ဆောက်ပုံ၊ ၁၂ ရာသီပွဲတော်နဲ့ ဗမာပြည်အကြောင်း သိစေဖို့။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/burmaland-android.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=com.thawdezin.burmaland&hl=en",
+      "iosUrl": "https://apps.apple.com/mm/app/burmaland/id6765511020"
+    },
+    {
+      "id": "islam-burma-muslim",
+      "title": "Islam: Burma Muslim",
+      "message": "ဦးရာဇတ်၊ ရဲဘော်ကိုထွေး၊ ဦးကိုနီတို့လို မွတ်စလင်တွေ ဘာကိုယုံကြည်ကြလဲ လေ့လာလို့ရတဲ့ App။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/islam-burma-muslim-android.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=com.thawdezin.israfil&hl=en",
+      "iosUrl": "https://apps.apple.com/us/app/islam-burma-muslim/id6755348373"
+    },
+    {
+      "id": "lan-pya-taryar",
+      "title": "Lan Pya Taryar",
+      "message": "ချစ်သုဝေ၊ ပန်းရောင်ခြယ်တို့လို ကက်သလစ်တွေ ဘာကိုယုံကြည်ကြလဲ လေ့လာလို့ရတဲ့ App။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/lan-pya-taryar-ios.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=com.thawdezin.lanpyataryar&hl=en",
+      "iosUrl": "https://apps.apple.com/us/app/lan-pya-taryar/id6757194728"
+    },
+    {
+      "id": "burma-lumbini",
+      "title": "Burma Lumbini",
+      "message": "ဗိုလ်ချုပ်အောင်ဆန်း၊ ဦးသန့်၊ ထူးအိမ်သင်တို့လို ဗုဒ္ဓဘာသာတွေ ဘာကို ယုံကြည်ကြလဲ လေ့လာလို့ရတဲ့ App။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/burma-lumbini-ios.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=com.thawdezin.lumbini&hl=en",
+      "iosUrl": "https://apps.apple.com/us/app/id6759958421"
+    },
+    {
+      "id": "hsu-crypto",
+      "title": "Hsu Crypto",
+      "message": "Cryptocurrency ကို ဗမာပြည်ကလူတွေ နားလည်လွယ်အောင် စာအုပ်တစ်အုပ်ကို App ပုံစံနဲ့ လေ့လာနိုင်ပါပြီ။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/hsu-crypto-android.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=app.thawdezin.cryptocurrency",
+      "iosUrl": "https://apps.apple.com/us/app/hsu-crypto/id6778843461"
+    },
+    {
+      "id": "dd-life-vault",
+      "title": "DD Life Vault",
+      "message": "ကတ်နံပါတ်၊ ကားနံပါတ်၊ အိမ်မှာရှိသမျှ စက်ပစ္စည်း model နံပါတ်နဲ့ သိမ်းချင်သမျှကို တစ်နေရာတည်းမှာ သိမ်းထားနိုင်တဲ့ App။",
+      "imageUrl": "https://thawdezin.netlify.app/assets/app-icons/dd-life-vault-android.webp",
+      "androidUrl": "https://play.google.com/store/apps/details?id=com.thawdezin.ddlifevault",
+      "iosUrl": "https://apps.apple.com/us/app/dd-life-vault/id6774111429"
+    }
+  ]
+}
